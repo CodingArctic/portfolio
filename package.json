@@ -1,18 +1,25 @@
 {
-  "name": "",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev .vercel/output/static",
+    "deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static"
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.1",
-    "@astrojs/cloudflare": "^7.6.4",
-    "astro": "^3.5.0",
-    "typescript": "^5.2.2"
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.11.0",
+    "@cloudflare/workers-types": "^4.20240405.0",
+    "vercel": "^33.7.1",
+    "wrangler": "^3.49.0"
   }
 }
