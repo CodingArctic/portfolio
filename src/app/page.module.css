@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: 'Raleway', sans-serif;
 }
 
-.title {
-  font-size: 5em;
+.name {
+  font-size: 10em;
+  color: aqua;
 }
 
-.subtitle {
-  font-size: 1.5em;
-  margin-top: 1.0em;
+.aboveTitle {
+  font-size: 3em;
 }
 
 .description {
