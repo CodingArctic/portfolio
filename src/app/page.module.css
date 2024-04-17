@@ -10,12 +10,17 @@
 }
 
 .name {
-  font-size: 10em;
+  font-size: 6vw;
   color: aqua;
 }
 
 .aboveTitle {
-  font-size: 3em;
+  font-size: 2vw;
+}
+
+.blurb {
+  margin-top: 2em;
+  font-size: 1.5vw;
 }
 
 .description {
