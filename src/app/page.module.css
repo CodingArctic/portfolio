@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.name {
+  font-size: 10em;
+  color: aqua;
+}
+
+.aboveTitle {
+  font-size: 3em;
 }
 
 .description {
