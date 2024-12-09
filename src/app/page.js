@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import styles from "./page.module.css";
 import SocialLink from "./components/socialLink";
+import LanguageCard from "./components/languageCard";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         </div>
       </div>
       <h2>My Languages & Technologies</h2>
+      <LanguageCard language="java"></LanguageCard>
       <h2>My Projects</h2>
     </main>
   );
